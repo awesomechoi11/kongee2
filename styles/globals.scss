@@ -1,0 +1,60 @@
+@use './_vars.scss';
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://cdn.bmschoi.dev/kongee/fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-Bd.otf)
+    format('opentype');
+}
+@font-face {
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://cdn.bmschoi.dev/kongee/fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-Roman.otf)
+    format('opentype');
+}
+html {
+  font-size: 0.06944444444vw;
+}
+body {
+  font-size: 18rem;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica Neue, sans-serif;
+  background-color: vars.$color-black;
+  color: vars.$color-white;
+  letter-spacing: -3%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  height: 96rem;
+}
+.page {
+}
+.fs-body1 {
+  font-size: vars.$fs-2;
+}
+.fs-body2 {
+  font-size: vars.$fs-2;
+}
+.fs-sub-subsection {
+  font-size: vars.$fs-3;
+}
+.fs-subsection {
+  font-size: vars.$fs-3;
+}
