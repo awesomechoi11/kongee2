@@ -1,3 +1,3 @@
-# github-tlpwx5
+# Kongee 2
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/github-tlpwx5)
+A portfolio of Sally (Hyunji) Kim- a UI/UX designer.
