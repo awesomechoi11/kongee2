@@ -276,6 +276,20 @@
   "resolved" "https://registry.npmjs.org/@rushstack/eslint-patch/-/eslint-patch-1.1.0.tgz"
   "version" "1.1.0"
 
+"@theatre/core@^0.4.7":
+  "integrity" "sha512-Dy66AX3yfJWW2xTzhRZBko9r0LB9XS8CO0eDv75fVbDcMnYl7NVZGy5OU7nG0nB8cElE1HniNQHN9g4kaZ2EzQ=="
+  "resolved" "https://registry.npmjs.org/@theatre/core/-/core-0.4.7.tgz"
+  "version" "0.4.7"
+  dependencies:
+    "@theatre/dataverse" "0.4.7"
+
+"@theatre/dataverse@0.4.7":
+  "integrity" "sha512-rNs9K6kiJSJ9i+WwQcxRa2p3bKzcRS2gWpK6MmZH0JqgFdGRmosgkYNr+vrD/DHYDY69laAHdPYLRepjcDST9w=="
+  "resolved" "https://registry.npmjs.org/@theatre/dataverse/-/dataverse-0.4.7.tgz"
+  "version" "0.4.7"
+  dependencies:
+    "lodash-es" "^4.17.21"
+
 "@types/json-schema@^7.0.8":
   "integrity" "sha512-qcUXuemtEu+E5wZSJHNxUXeCZhAfXKQ41D+duX+VYPde7xyEVZci+/oXKJL13tnRs9lR2pr4fod59GT6/X1/yQ=="
   "resolved" "https://registry.npmjs.org/@types/json-schema/-/json-schema-7.0.9.tgz"
@@ -1373,6 +1387,11 @@
   dependencies:
     "p-locate" "^2.0.0"
     "path-exists" "^3.0.0"
+
+"lodash-es@^4.17.21":
+  "integrity" "sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw=="
+  "resolved" "https://registry.npmjs.org/lodash-es/-/lodash-es-4.17.21.tgz"
+  "version" "4.17.21"
 
 "lodash.merge@^4.6.2":
   "integrity" "sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ=="
