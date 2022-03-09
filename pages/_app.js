@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <RecoilRoot>
       <Component {...pageProps} />
-      <ThreeStuff />
+      {/* <ThreeStuff /> */}
     </RecoilRoot>
   );
 }
