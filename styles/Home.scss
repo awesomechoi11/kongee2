@@ -1,0 +1,48 @@
+@use './_vars.scss';
+
+.page {
+  .banner {
+    font-weight: 700;
+    font-size: 144rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+}
+
+#moon {
+  position: relative;
+  width: 100rem;
+  height: 100rem;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  > .ball1 {
+    position: absolute;
+    width: 42rem;
+    height: 42rem;
+    background: vars.$color-white;
+    z-index: 1;
+  }
+  > .ball2 {
+    position: absolute;
+    width: 42rem;
+    height: 42rem;
+    background: vars.$color-black;
+    z-index: 2;
+  }
+  > .rays {
+    position: absolute;
+    > .ray {
+      position: absolute;
+      width: 12rem;
+      height: 2rem;
+      background-color: vars.$color-white;
+      transform-origin: left;
+    }
+    z-index: 3;
+  }
+}
