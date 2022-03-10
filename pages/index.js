@@ -39,8 +39,8 @@ export default function Home() {
     <motion.div animate={anim} initial="initial" className="page">
       <Navbar />
       <div>
-        <motion.div variants={nameBannerVariants}>
-          <div className="name">Sally (Hyunji) Kim</div>
+        <motion.div variants={nameBannerVariants} className="banner">
+          <div>Sally (Hyunji) Kim</div>
           <Moon />
         </motion.div>
       </div>

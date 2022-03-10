@@ -1,13 +1,14 @@
 @use './_vars.scss';
 
 .page {
-  .name {
+  .banner {
     font-weight: 700;
     font-size: 144rem;
     display: flex;
     justify-content: center;
     align-content: center;
   }
+
 }
 
 #moon {
@@ -18,31 +19,30 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  >.ball1{
+  cursor: pointer;
+  > .ball1 {
     position: absolute;
     width: 42rem;
     height: 42rem;
-    // left: -21rem;
-    // top: -21rem;
     background: vars.$color-white;
+    z-index: 1;
   }
-  >.ball2{
+  > .ball2 {
     position: absolute;
     width: 42rem;
     height: 42rem;
-    // left: -21rem;
-    // top: -21rem;
-
     background: vars.$color-black;
+    z-index: 2;
   }
-  >.rays{
+  > .rays {
     position: absolute;
-    >.ray{
+    > .ray {
       position: absolute;
       width: 12rem;
       height: 2rem;
       background-color: vars.$color-white;
       transform-origin: left;
     }
+    z-index: 3;
   }
 }
