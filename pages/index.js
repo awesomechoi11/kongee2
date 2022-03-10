@@ -5,6 +5,7 @@ import { useRecoilTransition } from '../components/Transition';
 import { useEffect } from 'react';
 import { useAnimation } from 'framer-motion';
 import Navbar from '../components/Navbar';
+import Moon from '../components/Home/Moon';
 
 export default function Home() {
   const {
@@ -40,7 +41,7 @@ export default function Home() {
       <div>
         <motion.div variants={nameBannerVariants}>
           <div className="name">Sally (Hyunji) Kim</div>
-          <div>moon</div>
+          <Moon />
         </motion.div>
       </div>
     </motion.div>
