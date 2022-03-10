@@ -23,13 +23,18 @@ body {
   font-size: 18rem;
 }
 html,
-body {
+body,
+.page {
   padding: 0;
   margin: 0;
   font-family: Helvetica Neue, sans-serif;
   background-color: vars.$color-black;
   color: vars.$color-white;
-  letter-spacing: -3%;
+  letter-spacing: -1rem;
+  
+}
+body * {
+  transition: color   cubic-bezier(.3,.01,.23,.99) 220ms, background-color cubic-bezier(.3,.01,.23,.99) 1220ms;
 }
 
 a {

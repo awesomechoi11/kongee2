@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import { useRecoilState } from 'recoil';
+import { themeAtom } from '../RecoilTheme';
 
 const rayVariants = {
   dark: (custom) => {
@@ -12,7 +14,12 @@ const rayVariants = {
       rotate: `${angle + 180}deg`,
       x: length * Math.cos(rads) + 'rem',
       y: offset + length * Math.sin(rads) + 'rem',
-      transition: { duration: 0.3, type: 'tween', delay: custom * 0.027 },
+      transition: {
+        duration: 0.4,
+        type: 'tween',
+        delay: custom * 0.027,
+        ease: [0.3, 0.01, 0.23, 0.99],
+      },
     };
   },
 
@@ -26,7 +33,12 @@ const rayVariants = {
       rotate: `${angle + 180}deg`,
       x: length * Math.cos(rads) + 'rem',
       y: offset + length * Math.sin(rads) + 'rem',
-      transition: { duration: 0.3, type: 'tween', delay: custom * 0.02 },
+      transition: {
+        duration: 0.6,
+        type: 'tween',
+        delay: custom * 0.02,
+        ease: [0.3, 0.01, 0.23, 0.99],
+      },
     };
   },
 };
@@ -44,33 +56,32 @@ const ball1Variants = {
   dark: {
     width: '33rem',
     height: '33rem',
-    transition: { delay: 0.2, duration: 0.3 },
+    transition: { delay: 0.2, duration: 0.4, ease: [0.3, 0.01, 0.23, 0.99] },
   },
   light: {
     width: '42rem',
     height: '42rem',
-    transition: { duration: 0.3 },
+    transition: { duration: 0.8, ease: [0.3, 0.01, 0.23, 0.99] },
   },
 };
 const ball2Variants = {
   dark: {
     x: '27rem',
-    transition: { duration: 0.2, delay: 0.3 },
+    transition: { duration: 0.4, delay: 0.3, ease: [0.3, 0.01, 0.23, 0.99] },
   },
   light: {
     x: '42rem',
-    transition: { duration: 0.4 },
+    transition: { duration: 0.6, ease: [0.3, 0.01, 0.23, 0.99] },
   },
 };
 export default function Moon() {
-  const [toggle, setToggle] = useState(false);
-  const animState = toggle ? 'light' : 'dark';
-
+  const [darkMode, setTheme] = useRecoilState(themeAtom);
+  const animState = darkMode ? 'dark' : 'light';
   return (
     <motion.div
       id="moon"
       variants={moonVariants}
-      onClick={() => setToggle(!toggle)}
+      onClick={() => setTheme(!darkMode)}
       animate={animState}
       transition={{
         duration: 0.5,
