@@ -31,10 +31,11 @@ body,
   background-color: vars.$color-black;
   color: vars.$color-white;
   letter-spacing: -1rem;
-  
+  min-height: 100vh;
 }
 body * {
-  transition: color   cubic-bezier(.3,.01,.23,.99) 220ms, background-color cubic-bezier(.3,.01,.23,.99) 1220ms;
+  transition: color cubic-bezier(0.3, 0.01, 0.23, 0.99) 220ms,
+    background-color cubic-bezier(0.3, 0.01, 0.23, 0.99) 1220ms;
 }
 
 a {
@@ -66,4 +67,8 @@ a {
 
 .circle {
   border-radius: 100%;
+}
+
+.ta-center {
+  text-align: center;
 }

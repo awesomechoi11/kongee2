@@ -8,13 +8,12 @@
     justify-content: center;
     align-content: center;
   }
-
 }
 
 #moon {
   position: relative;
-  width: 100rem;
-  height: 100rem;
+  width: 75rem;
+  height: 110rem;
   transform-origin: center;
   display: flex;
   justify-content: center;
@@ -44,5 +43,16 @@
       transform-origin: left;
     }
     z-index: 3;
+  }
+}
+
+#home {
+  .introduction {
+    position: absolute;
+    height: 235rem;
+    width: 412rem;
+    left: 140rem;
+    top: 370rem;
+    border-radius: 0px;
   }
 }

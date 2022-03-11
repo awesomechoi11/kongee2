@@ -45,6 +45,7 @@ export default function Home() {
       animate={anim}
       initial="initial"
       className={clsx('page', !darkMode && 'light-mode')}
+      id="home"
     >
       <Navbar />
       <div>
@@ -52,6 +53,21 @@ export default function Home() {
           <div>Sally (Hyunji) Kim</div>
           <Moon />
         </motion.div>
+        <div className="ta-center">
+          <b>Visual & Product Designer</b> based in <b>Cupertino, CA</b>.
+        </div>
+      </div>
+      <div className="introduction">
+        I design and create to <b>leave positive impacts in my community</b>{' '}
+        through <b>thought, delightful design</b>.
+        <br />
+        <br />
+        Currently designing @ <b>Riot Games</b>. Previously @{' '}
+        <b>University of Michigan</b> {'&'} <b>URx</b>.
+        <br />
+        <br />
+        Now looking for full-time Product Designer positions starting in
+        September 2022.
       </div>
     </motion.div>
   );

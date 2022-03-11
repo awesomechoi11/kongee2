@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { useRecoilState } from 'recoil';
@@ -36,7 +37,7 @@ const rayVariants = {
       transition: {
         duration: 0.6,
         type: 'tween',
-        delay: custom * 0.02,
+        delay: custom * 0.02 + 0.3,
         ease: [0.3, 0.01, 0.23, 0.99],
       },
     };
@@ -61,12 +62,12 @@ const ball1Variants = {
   light: {
     width: '42rem',
     height: '42rem',
-    transition: { duration: 0.8, ease: [0.3, 0.01, 0.23, 0.99] },
+    transition: { duration: 0.4, ease: [0.3, 0.01, 0.23, 0.99] },
   },
 };
 const ball2Variants = {
   dark: {
-    x: '27rem',
+    x: '22rem',
     transition: { duration: 0.4, delay: 0.3, ease: [0.3, 0.01, 0.23, 0.99] },
   },
   light: {
@@ -98,7 +99,7 @@ export default function Moon() {
           <motion.div
             key={index}
             custom={index + 1}
-            className={`ray ray${index}`}
+            className={clsx('ray', 'ray' + index)}
             variants={rayVariants}
           />
         ))}
